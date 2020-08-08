@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./styles/style.css">
-  <link rel="stylesheet" href="./styles/stylesheet.css">
+  <link rel="stylesheet" href="./styles/finalStyle.css">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
   <title>Insure landing page</title>
@@ -29,9 +28,10 @@
   </nav> 
   
 
-  <div class="introImage">
-    <img src="./images/image-intro-mobile.jpg" alt="Intro Image - Family">
-  </div>
+  <picture class="introImage">
+    <source srcset="../images/image-intro-desktop.jpg"  media="(min-width: 375px)"/>
+    <img src="../images/image-intro-mobile.jpg" alt="Intro Image - Family"/>
+  </picture>
   <div class="introText">
       <h1>Humanizing </br> your insurance.</h1>
       <p>Get your life insurance coverage easier and faster. We blend our expertise 
@@ -64,46 +64,55 @@
     </div>
 
   </div>
-<!--
+  <div class="howWeWork">
+    <h1>Find out more about how we work</h1>
+    <div><a>HOW WE WORK</a></div>
+  </div>
 
-    Our plans aren’t full of conditions and clauses to prevent payouts. We make 
-    sure you’re covered when you need it.
+  <div class="footerIcons">
+    <img class="logo" src="./images/logo.svg">
+    <ul>
+      <li><a href=""><img src="./images/icon-facebook.svg" alt="facebook Icon"></a></li>
+      <li><a href=""><img src="./images/icon-twitter.svg" alt="Twitter Icon"></a></li>
+      <li><a href=""><img src="./images/icon-pinterest.svg" alt="Pinterest Icon"></a></li>
+      <li><a href=""><img src="./images/icon-instagram.svg" alt="Instagram Icon"></a></li>
+    </ul>
+  </div>
+  <div class="footer">
+    <div class="footerItems">
+      <h4>OUR COMPANY</h4>
+      <p>HOW WE WORK</p>
+      <P>WHY INSURE?</P>
+      <P>VIEW PLANS</P>
+      <P>REVIEWS</P>
+    </div>
+    <div class="footerItems">
+      <h4>HELP ME</h4>
+      <p>FOQ</p>
+      <P>TERMS OF USE</P>
+      <P>PRIVACY POLICY</P>
+      <P>COOCKIES</P>
+    </div>
+    <div class="footerItems">
+      <h4>CONTACT</h4>
+      <p>SALES</p>
+      <P>SUPPORT</P>
+      <P>LIVE CHAT</P>
+    </div>
+    <div class="footerItems">
+      <h4>OTHERS</h4>
+      <p>CAREERS</p>
+      <P>PRESS</P>
+      <P>LICENSES</P>
+    </div>
 
-    Find out more about how we work
 
-    How we work
+  </div>
 
-    Our company
-
-    How we work
-    Why Insure?
-    View plans
-    Reviews
-
-    Help me
-
-    FAQ
-    Terms of use
-    Privacy policy
-    Cookies
-
-    Contact
-
-    Sales
-    Support
-    Live chat
-
-    Others
-
-    Careers
-    Press
-    Licenses
-
-    
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+      Coded by <a href="marianareis.co">Mariana Reis</a>.
+    </div>
     <script src="./js/app.js"></script>
 </body>
 </html>
