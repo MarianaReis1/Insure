@@ -44,9 +44,9 @@ body {
     cursor: pointer;
 }
 
-a:hover {
+/* #navBar li a:hover {
     color: hsl(300, 85%, 35%);
-}
+} */
 
 #navBar > :last-child{
     padding: 8px;

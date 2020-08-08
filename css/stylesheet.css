@@ -2,4 +2,16 @@ body {
   background-color: red;
 }
 
+.introText {
+  height: 450px;
+  font-family: DM Serif Display, serif;
+  background-color: #2d2640;
+}
+
+.introText h1,
+.introText p {
+  color: white;
+  text-align: center;
+}
+
 /*# sourceMappingURL=stylesheet.css.map */
