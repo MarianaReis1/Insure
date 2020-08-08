@@ -1,0 +1,37 @@
+$primaryColor1: hsl(256, 26%, 20%); //Dark Violet: hsl(256, 26%, 20%)
+$primaryColor2: hsl(216, 30%, 68%); //Grayish Blue: hsl(216, 30%, 68%)
+$primaryColor3: white; // text colors
+
+$neutralColor1: hsl(270, 9%, 17%); //Very Dark Violet: hsl(270, 9%, 17%)
+$neutralColor2: hsl(273, 4%, 51%); //Dark Grayish Violet: hsl(273, 4%, 51%)
+$neutralColor3: hsl(0, 0%, 98%); //Very Light Gray: hsl(0, 0%, 98%)
+
+
+$font1: Karla;
+$font2: DM Serif Display, serif;
+
+
+@mixin btn {
+    padding: 8px;
+    width: 40%;
+    margin: 0 auto;
+    border: 2px solid white;
+}
+
+@mixin weAreDifferentIcons {
+    img{
+        display: block;
+        margin: 60px auto 40px auto;
+    }
+    h2{
+        color: $neutralColor1;
+        font-family: $font2;
+        text-align: center;
+    }
+    p{
+        color: $neutralColor2;
+        text-align: center;
+        padding: 30px 5% 0 5%;
+        line-height: 1.6;
+    }
+}
