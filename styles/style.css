@@ -67,9 +67,23 @@ body {
   background-color: #837d87;
 }
 
-.introImage img {
+.introImageSmall {
   display: block;
   margin: auto;
+}
+
+.introImageBig {
+  display: none;
+}
+
+@media all and (min-width: 375px) {
+  .introImageSmall {
+    display: none;
+  }
+  .introImageBig {
+    display: block;
+    margin: auto;
+  }
 }
 
 .introText {
