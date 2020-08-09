@@ -67,6 +67,10 @@ body {
   background-color: #837d87;
 }
 
+.introImages {
+  background-color: #2d2640;
+}
+
 .introImageSmall {
   display: block;
   margin: auto;
@@ -76,7 +80,7 @@ body {
   display: none;
 }
 
-@media all and (min-width: 375px) {
+@media all and (min-width: 500px) {
   .introImageSmall {
     display: none;
   }
@@ -87,12 +91,12 @@ body {
 }
 
 .introText {
-  background-image: url(../images/bg-pattern-intro-left-mobile.svg), url(../images/bg-pattern-intro-right-mobile.svg), url(../images/line.jpeg), -webkit-gradient(linear, left top, left bottom, color-stop(80%, #2d2640), color-stop(20%, #fafafa));
-  background-image: url(../images/bg-pattern-intro-left-mobile.svg), url(../images/bg-pattern-intro-right-mobile.svg), url(../images/line.jpeg), linear-gradient(#2d2640 80%, #fafafa 20%);
+  background-image: url(../images/bg-pattern-intro-left-mobile.svg), url(../images/bg-pattern-intro-right-mobile.svg), url(../images/line.jpeg), -webkit-gradient(linear, left top, left bottom, color-stop(80%, #2d2640), color-stop(20%, white));
+  background-image: url(../images/bg-pattern-intro-left-mobile.svg), url(../images/bg-pattern-intro-right-mobile.svg), url(../images/line.jpeg), linear-gradient(#2d2640 80%, white 20%);
   background-position: left top, right bottom, center bottom;
   background-repeat: no-repeat;
   background-size: auto, auto, 125px;
-  height: 75vh;
+  height: 80vh;
 }
 
 .introText h1,
