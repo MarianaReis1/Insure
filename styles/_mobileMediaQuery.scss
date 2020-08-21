@@ -1,6 +1,8 @@
-@media all and (min-width: 370px){
+@import './variablesAndMixins';
 
-    @media all and (min-width: 500px){
+@media all and (min-width: 376px){
+
+    #introImages {
         .introImageSmall {
             display: none;
         }
@@ -8,6 +10,7 @@
         .introImageBig{
             display: block;
             margin: auto;
+            width: 100%;
         }    
     }
 }

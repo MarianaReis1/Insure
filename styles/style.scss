@@ -75,7 +75,7 @@ header {
 }
 //end of navigation bar
 
-//main content
+//Introduction Content
 #introImages {
 
     .introImages{
@@ -91,6 +91,7 @@ header {
         display: none;
     }
 
+    //Patterns used only for desktop version
     .pattern1,
     .pattern2 {
         display: none;
@@ -138,7 +139,7 @@ header {
 
 }
 
-
+//"We're different" Content
 .secondContent {
     margin-top: 7%;
     min-height: 100vh;
@@ -240,5 +241,6 @@ header {
 
 
 @import './mobileMediaQuery';
+@import './tabletMediaQuery';
 @import './desktopSmallMediaQuery';
 @import './desktopBigMediaQuery';
