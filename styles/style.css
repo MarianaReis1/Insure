@@ -651,6 +651,7 @@ header .barIcon {
     display: block;
     right: 10%;
     top: 25%;
+    width: 540px;
   }
   #introImages figure .introImageSmall {
     display: none;
