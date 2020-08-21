@@ -12,63 +12,72 @@
 </head>
 <body>
 
-  <nav>
-    <a><img class="logo" src="images/logo.svg" alt="Insure Logo"></a>
-    <ul id="navBar" class="navBarHide">
+  <header>
+    <img class="logo" src="images/logo.svg" alt="Insure Logo">
+    <ul id="navBarList" class="navBarShow"> 
       <li><a>HOW WE WORK</a></li>
       <li><a>BLOG</a></li>
       <li><a>ACCOUNT</a></li>
-      <li><a>VIEW PLANS</a></li>
+      <li id="viewPlansBtn"><a>VIEW PLANS</a></li>
     </ul>
     <div class="barIcon" >
       <a>
         <img id="barIcons" onclick="menuHamburguer()" src="./images/icon-hamburger.svg" alt="Bar/Hamburguer Icon">
       </a>
     </div>
-  </nav> 
+  </header> 
   
-
-  <figure class="introImages">
-    <img class="introImageSmall" src="./images/image-intro-mobile.png" alt="Family">
-    <img class="introImageBig" src="./images/image-intro-desktop.png" alt="Family">
-  </figure>
-  <div class="introText">
-      <h1>Humanizing </br> your insurance.</h1>
-      <p>Get your life insurance coverage easier and faster. We blend our expertise 
-        and technology to help you find the plan that’s right for you. Ensure you 
-        and your loved ones are protected.
-      </p>
-      <div><a>VIEW PLANS</a></div>
+  <div id="introImages">
+    <figure>
+      <img class="introImageSmall" src="./images/image-intro-mobile.png" alt="Family">
+      <img class="introImageBig" src="./images/image-intro-desktop.png" alt="Family">
+      <img class="pattern1" src="./images/bg-pattern-intro-left-desktop.svg" alt="pattern">
+      <img class="pattern2" src="./images/bg-pattern-intro-right-desktop.svg" alt="pattern">
+    </figure>
+    <div class="introText">
+      <img src ="./images/line.jpeg" alt="line">
+        <h1>
+          Humanizing </br> your insurance.
+        </h1>
+        <p>Get your life insurance coverage easier and faster. We blend our expertise 
+          and technology to help you find the plan that’s right for you. Ensure you 
+          and your loved ones are protected.
+        </p>
+        <div><a>VIEW PLANS</a></div>
+    </div>
   </div>
 
-  <div class="mainContent">
+  <div class="secondContent">
+    <img class="line" src ="./images/line.jpeg" alt="line">
     <h1>We’re different</h1>
 
-    <div class="snappyProcess">
-      <img src="./images/icon-snappy-process.svg" alt="thunderbolt icon">
-      <h2>Snappy Process</h2>
-      <p>Our application process can be completed in minutes, not hours. Don’t get 
-        stuck filling in tedious forms.</p>
-    </div>
-    <div class="affordablePrices">
-      <img src="./images/icon-affordable-prices.svg" alt="dolar icon">
-      <h2>Affordable Prices</h2>
-      <p>We don’t want you worrying about high monthly costs. Our prices may be low, 
-        but we still offer the best coverage possible.</p>
-    </div>
-    <div class="peopleFirst">
-      <img src="./images/icon-people-first.svg" alt="person icon">
-      <h2>People First</h2>
-      <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make 
-        sure you’re covered when you need it.</p>
-    </div>
-
+    <div id="icons">
+      <div class="snappyProcess">
+        <img src="./images/icon-snappy-process.svg" alt="thunderbolt icon">
+        <h2>Snappy Process</h2>
+        <p>Our application process can be completed in minutes, not hours. Don’t get 
+          stuck filling in tedious forms.</p>
+      </div>
+      <div class="affordablePrices">
+        <img src="./images/icon-affordable-prices.svg" alt="dolar icon">
+        <h2>Affordable Prices</h2>
+        <p>We don’t want you worrying about high monthly costs. Our prices may be low, 
+          but we still offer the best coverage possible.</p>
+      </div>
+      <div class="peopleFirst">
+        <img src="./images/icon-people-first.svg" alt="person icon">
+        <h2>People First</h2>
+        <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+          sure you’re covered when you need it.</p>
+      </div>
+    </div>  
   </div>
   <div class="howWeWork">
+    <img src="../images/bg-pattern-how-we-work-desktop.svg" alt="pattern">
     <h1>Find out more about how we work</h1>
     <div><a>HOW WE WORK</a></div>
   </div>
-
+<div id="footer">
   <div class="footerIcons">
     <img class="logo" src="./images/logo.svg">
     <ul>
@@ -78,34 +87,36 @@
       <li><a href=""><img src="./images/icon-instagram.svg" alt="Instagram Icon"></a></li>
     </ul>
   </div>
-  <div class="footer">
+
+  <img class="bigLine" src="./images/line2.png" alt="Big Line">
+  <div class="footerGrid">
     <div class="footerItems">
       <h4>OUR COMPANY</h4>
-      <p>HOW WE WORK</p>
-      <P>WHY INSURE?</P>
-      <P>VIEW PLANS</P>
-      <P>REVIEWS</P>
+      <p><a>HOW WE WORK</a></p>
+      <P><a>WHY INSURE?</a></P>
+      <P><a>VIEW PLANS</a></P>
+      <P><a>REVIEWS</a></P>
     </div>
     <div class="footerItems">
       <h4>HELP ME</h4>
-      <p>FOQ</p>
-      <P>TERMS OF USE</P>
-      <P>PRIVACY POLICY</P>
-      <P>COOCKIES</P>
+      <p><a>FAQ</a></p>
+      <P><a>TERMS OF USE</a></P>
+      <P><a>PRIVACY POLICY</a></P>
+      <P><a>COOCKIES</a></P>
     </div>
     <div class="footerItems">
       <h4>CONTACT</h4>
-      <p>SALES</p>
-      <P>SUPPORT</P>
-      <P>LIVE CHAT</P>
+      <p><a>SALES</a></p>
+      <P><a>SUPPORT</a></P>
+      <P><a>LIVE CHAT</a></P>
     </div>
     <div class="footerItems">
       <h4>OTHERS</h4>
-      <p>CAREERS</p>
-      <P>PRESS</P>
-      <P>LICENSES</P>
+      <p><a>CAREERS</a></p>
+      <P><a>PRESS</a></P>
+      <P><a>LICENSES</a></P>
     </div>
-
+  </div>
 
   </div>
 

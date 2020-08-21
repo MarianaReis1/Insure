@@ -1,0 +1,307 @@
+@media all and (min-width: 1280px){
+    //header
+    header{
+        position: absolute;
+        width: 100vw;
+        background-color:  white;
+        z-index: 999;
+
+        .logo {
+            padding: 1.7rem 6rem 1.7rem 7.5rem;  
+            min-width: 23%;      
+        }
+
+
+        #navBarList{
+            display: inline-flex;
+            position: absolute;
+            right: 6rem;
+            min-height: 0;
+            background-color:  inherit;
+            background-image: none;
+            padding-top: 1rem;
+            padding-right: 3rem;
+            
+            li {
+                margin: auto;
+                white-space: nowrap;
+                color: $neutralColor2;
+                font-size: 1rem;
+                padding: 0 2rem;
+
+                &:hover {
+                    color: $neutralColor1;
+                }
+            }
+
+            > :last-child{
+                padding: 1.5% 6%;
+                width: 60%;
+                margin: auto;
+                border: 2px solid $neutralColor1;
+                color: $neutralColor1;
+            }
+
+            #viewPlansBtn:hover {
+                background-color: $neutralColor1;
+                color: $neutralColor3;
+            }
+
+        }
+        
+        .barIcon {
+            display: none;
+        }
+    }
+
+    //main content
+    #introImages {
+        position: relative;
+        height: 120vh;
+        background-image: linear-gradient($primaryColor1 85%, white 15%);
+
+
+        figure {
+            position: absolute;
+            height: inherit;
+            width: 100vw;
+            
+            .introImageBig {
+                position: absolute;
+                background-color: none;
+                display: block;
+                right: 10%;
+                top: 25%;
+                
+            }
+            
+            .introImageSmall {
+                display: none;
+            }
+            
+            .pattern1 {
+                position: absolute;
+                display: inherit;
+                left: 0;
+                bottom: -200px;
+            }
+
+            .pattern2 {
+                display: initial;
+                position: absolute;
+                right: 0;
+                top: 0;
+             
+            }
+        }
+
+        
+        .introText {
+            position: absolute;
+            height: inherit;
+            background-image: none;
+            width: 50%;
+            padding: 18% 5% 0 10%;
+
+            //small line
+            img {
+                display: block;
+                position: absolute;
+                width: 100px;
+            }
+
+            h1,
+            p,
+            div {
+                color: $neutralColor3;
+            }
+    
+            h1 {
+                
+                font-family: $font2;
+                font-size: 2.5rem;
+                padding-top: 15%;
+                padding-bottom: 5%;
+                text-align: left;
+            }
+    
+            p {
+                font-family: $font1;
+                line-height: 1.5;
+                font-size: 0.9rem;
+                padding: 2% 0;
+                text-align: left;
+            }
+    
+            div{
+                @include btn();
+                margin: 0;
+                margin-top: 25px;
+
+                &:hover {
+                    background-color: $neutralColor3;
+                    color: $primaryColor1;
+                }
+            }
+        };
+    
+    }
+
+    .secondContent {
+        padding-top: 10%;
+        min-height: 100vh;
+        padding-left: 10%;
+
+        .line {
+            position: absolute;
+            display: block;
+            width: 100px;
+
+        }
+        
+        h1{
+            padding: 5% 0;
+            color: $neutralColor1;
+            font-size: 2.5rem;
+            font-family: $font2;
+            text-align: left;
+        }
+    
+    }
+    
+    #icons {
+        display: grid;
+        grid-template-columns: auto auto auto;
+
+        .snappyProcess,
+        .affordablePrices,
+        .peopleFirst  {
+            @include weAreDifferentIcons;
+
+            img {
+                margin: 0;
+                padding-bottom: 10%;
+                
+            }
+            h2 {
+                text-align: left;
+                padding-bottom: 4%;
+            }
+            p {
+                text-align: left;
+                padding: 0;
+                padding-right: 10%;
+                font-size: 0.9rem;
+            }
+        
+        }
+    }
+
+    
+    .howWeWork {
+        position: relative;
+        background-image: none;
+        width: 80%;
+        margin: auto;
+        height: 250px;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 78% 22%;
+
+        img {
+            display: block;
+            position: absolute;
+            right: 0;
+        }
+
+        h1{
+            // position: absolute;
+            font-size: 3rem;
+            text-align: left;
+            padding: 8% 20% 8% 10%;
+        }
+        div{
+
+            @include btn();
+            white-space: nowrap;
+            margin: auto 0;
+            font-size: 0.9rem;
+            width: 70%;
+            z-index: 999;
+            &:hover {
+                background-color: $neutralColor3;
+                color: $primaryColor1;
+            }
+        }
+    }
+
+
+    #footer {
+        height: 60vh;
+        margin-top: 200px;
+        background-color: $neutralColor3;
+        background-image: 
+            url(../images/bg-pattern-footer-desktop.svg);
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: auto;
+        
+        .footerIcons {
+            background-image: none;
+            height: 30%;
+
+            .logo{
+                display: inline-block;
+                margin-left: 10%;
+                margin-top: 5%;
+                padding: 0; //5rem 5rem 1rem 5rem
+            }
+
+            ul{
+                float: right;
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                margin-right: 10%;
+                margin-top: 5%;
+            }
+
+            li {
+                list-style: none;
+                padding: 0.5rem;
+            }
+        }
+        
+        .bigLine {
+            margin: auto;
+            display: block;
+            // position: absolute;
+            width: 80%;
+        }
+
+        .footerGrid {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            margin-left: 10%;
+
+
+            .footerItems {
+                @include footerInformation;
+                text-align: left;
+                h4{
+                    padding: 1.2rem 0;
+                }
+                p{
+                    padding: 0.5rem 0;
+                }
+                
+            }
+
+        }
+    }
+
+    .attribution {
+        background-color: $neutralColor3;
+        margin-top: 0;
+        font-size: 0.9rem;
+    }
+}

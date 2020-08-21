@@ -1,9 +1,3 @@
-@media all and (min-width: 370px) {
-  body {
-    font-size: 18px;
-  }
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -14,13 +8,14 @@
 body {
   font-size: 18px;
   font-family: Karla;
+  overflow-x: hidden;
 }
 
-.logo {
+header .logo {
   padding: 2rem;
 }
 
-#navBar {
+header #navBarList {
   position: relative;
   color: #fafafa;
   list-style-type: none;
@@ -32,7 +27,7 @@ body {
   padding-top: 10%;
 }
 
-#navBar li {
+header #navBarList li {
   font-size: 1.5rem;
   display: block;
   text-align: center;
@@ -40,22 +35,22 @@ body {
   cursor: pointer;
 }
 
-#navBar > :last-child {
+header #navBarList > :last-child {
   padding: 8px;
   width: 60%;
   margin: auto;
   border: 2px solid #fafafa;
 }
 
-.navBarHide {
+header .navBarHide {
   display: none;
 }
 
-.navBarShow {
+header .navBarShow {
   display: block;
 }
 
-.barIcon {
+header .barIcon {
   display: block;
   position: absolute;
   padding: 1.5rem;
@@ -63,64 +58,59 @@ body {
   top: 0;
 }
 
-.barIcon a:hover {
-  background-color: #837d87;
-}
-
-.introImages {
+#introImages .introImages {
   background-color: #2d2640;
 }
 
-.introImageSmall {
+#introImages .introImageSmall {
   display: block;
   margin: auto;
 }
 
-.introImageBig {
+#introImages .introImageBig {
   display: none;
 }
 
-@media all and (min-width: 500px) {
-  .introImageSmall {
-    display: none;
-  }
-  .introImageBig {
-    display: block;
-    margin: auto;
-  }
+#introImages .pattern1,
+#introImages .pattern2 {
+  display: none;
 }
 
-.introText {
+#introImages .introText {
   background-image: url(../images/bg-pattern-intro-left-mobile.svg), url(../images/bg-pattern-intro-right-mobile.svg), url(../images/line.jpeg), -webkit-gradient(linear, left top, left bottom, color-stop(80%, #2d2640), color-stop(20%, white));
   background-image: url(../images/bg-pattern-intro-left-mobile.svg), url(../images/bg-pattern-intro-right-mobile.svg), url(../images/line.jpeg), linear-gradient(#2d2640 80%, white 20%);
   background-position: left top, right bottom, center bottom;
   background-repeat: no-repeat;
   background-size: auto, auto, 125px;
-  height: 80vh;
+  height: 90vh;
 }
 
-.introText h1,
-.introText p,
-.introText div {
+#introImages .introText img {
+  display: none;
+}
+
+#introImages .introText h1,
+#introImages .introText p,
+#introImages .introText div {
   color: #fafafa;
   text-align: center;
 }
 
-.introText h1 {
+#introImages .introText h1 {
   font-family: DM Serif Display, serif;
   font-size: 2.5rem;
   padding-top: 20%;
   padding-bottom: 5%;
 }
 
-.introText p {
+#introImages .introText p {
   font-family: DM Serif Display, serif;
   line-height: 1.3;
   padding: 2% 8%;
 }
 
-.introText div {
-  padding: 8px;
+#introImages .introText div {
+  padding: 9px;
   width: 45%;
   margin: 0 auto;
   border: 2px solid #fafafa;
@@ -129,16 +119,20 @@ body {
   margin-top: 8%;
 }
 
-.introText div a {
+#introImages .introText div a {
   cursor: pointer;
 }
 
-.mainContent {
+.secondContent {
   margin-top: 7%;
   min-height: 100vh;
 }
 
-.mainContent h1 {
+.secondContent .line {
+  display: none;
+}
+
+.secondContent h1 {
   color: #2b272f;
   font-size: 2.5rem;
   font-family: DM Serif Display, serif;
@@ -175,9 +169,13 @@ body {
   background-repeat: no-repeat;
   background-position: right top;
   width: 85%;
-  min-height: 350px;
+  height: 350px;
   margin: 8rem auto;
   padding: 4rem 0;
+}
+
+.howWeWork img {
+  display: none;
 }
 
 .howWeWork h1 {
@@ -188,7 +186,7 @@ body {
 }
 
 .howWeWork div {
-  padding: 8px;
+  padding: 9px;
   width: 45%;
   margin: 0 auto;
   border: 2px solid #fafafa;
@@ -202,7 +200,7 @@ body {
   cursor: pointer;
 }
 
-.footerIcons {
+#footer .footerIcons {
   height: 30vh;
   background-image: url(../images/bg-pattern-footer-mobile.svg), url(../images/line2.png);
   background-position: left top, center bottom;
@@ -210,13 +208,13 @@ body {
   background-size: auto, 90%;
 }
 
-.footerIcons .logo {
+#footer .footerIcons .logo {
   display: block;
   margin: auto;
   padding: 5rem 5rem 1rem 5rem;
 }
 
-.footerIcons ul {
+#footer .footerIcons ul {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto auto auto;
@@ -226,30 +224,365 @@ body {
           justify-content: center;
 }
 
-.footerIcons li {
+#footer .footerIcons li {
   list-style: none;
   padding: 0.5rem;
 }
 
-.footerItems {
+#footer .bigLine {
+  display: none;
+}
+
+#footer .footerGrid .footerItems {
   text-align: center;
   margin-top: 10%;
 }
 
-.footerItems h4 {
+#footer .footerGrid .footerItems h4 {
   padding: 1.2rem;
   color: #837d87;
 }
 
-.footerItems p {
+#footer .footerGrid .footerItems p {
   color: #2b272f;
   font-weight: 700;
   padding: 0.5rem;
+}
+
+#footer .footerGrid .footerItems a {
+  cursor: pointer;
+}
+
+#footer .footerGrid .footerItems a:hover {
+  text-decoration: underline;
 }
 
 .attribution {
   margin-top: 50px;
   text-align: center;
   font-size: 0.7rem;
+}
+
+@media all and (min-width: 370px) and (min-width: 500px) {
+  .introImageSmall {
+    display: none;
+  }
+  .introImageBig {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  header {
+    position: absolute;
+    width: 100vw;
+    background-color: white;
+    z-index: 999;
+  }
+  header .logo {
+    padding: 1.7rem 6rem 1.7rem 7.5rem;
+    min-width: 23%;
+  }
+  header #navBarList {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: absolute;
+    right: 6rem;
+    min-height: 0;
+    background-color: inherit;
+    background-image: none;
+    padding-top: 1rem;
+    padding-right: 3rem;
+  }
+  header #navBarList li {
+    margin: auto;
+    white-space: nowrap;
+    color: #837d87;
+    font-size: 1rem;
+    padding: 0 2rem;
+  }
+  header #navBarList li:hover {
+    color: #2b272f;
+  }
+  header #navBarList > :last-child {
+    padding: 1.5% 6%;
+    width: 60%;
+    margin: auto;
+    border: 2px solid #2b272f;
+    color: #2b272f;
+  }
+  header #navBarList #viewPlansBtn:hover {
+    background-color: #2b272f;
+    color: #fafafa;
+  }
+  header .barIcon {
+    display: none;
+  }
+  #introImages {
+    position: relative;
+    height: 120vh;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(85%, #2d2640), color-stop(15%, white));
+    background-image: linear-gradient(#2d2640 85%, white 15%);
+  }
+  #introImages figure {
+    position: absolute;
+    height: inherit;
+    width: 100vw;
+  }
+  #introImages figure .introImageBig {
+    position: absolute;
+    background-color: none;
+    display: block;
+    right: 10%;
+    top: 25%;
+  }
+  #introImages figure .introImageSmall {
+    display: none;
+  }
+  #introImages figure .pattern1 {
+    position: absolute;
+    display: inherit;
+    left: 0;
+    bottom: -200px;
+  }
+  #introImages figure .pattern2 {
+    display: initial;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #introImages .introText {
+    position: absolute;
+    height: inherit;
+    background-image: none;
+    width: 50%;
+    padding: 18% 5% 0 10%;
+  }
+  #introImages .introText img {
+    display: block;
+    position: absolute;
+    width: 100px;
+  }
+  #introImages .introText h1,
+  #introImages .introText p,
+  #introImages .introText div {
+    color: #fafafa;
+  }
+  #introImages .introText h1 {
+    font-family: DM Serif Display, serif;
+    font-size: 2.5rem;
+    padding-top: 15%;
+    padding-bottom: 5%;
+    text-align: left;
+  }
+  #introImages .introText p {
+    font-family: Karla;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    padding: 2% 0;
+    text-align: left;
+  }
+  #introImages .introText div {
+    padding: 9px;
+    width: 45%;
+    margin: 0 auto;
+    border: 2px solid #fafafa;
+    color: #fafafa;
+    text-align: center;
+    margin-top: 8%;
+    margin: 0;
+    margin-top: 25px;
+  }
+  #introImages .introText div a {
+    cursor: pointer;
+  }
+  #introImages .introText div:hover {
+    background-color: #fafafa;
+    color: #2d2640;
+  }
+  .secondContent {
+    padding-top: 10%;
+    min-height: 100vh;
+    padding-left: 10%;
+  }
+  .secondContent .line {
+    position: absolute;
+    display: block;
+    width: 100px;
+  }
+  .secondContent h1 {
+    padding: 5% 0;
+    color: #2b272f;
+    font-size: 2.5rem;
+    font-family: DM Serif Display, serif;
+    text-align: left;
+  }
+  #icons {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+  #icons .snappyProcess img,
+  #icons .affordablePrices img,
+  #icons .peopleFirst img {
+    display: block;
+    margin: 60px auto 40px auto;
+  }
+  #icons .snappyProcess h2,
+  #icons .affordablePrices h2,
+  #icons .peopleFirst h2 {
+    color: #2b272f;
+    font-family: DM Serif Display, serif;
+    text-align: center;
+  }
+  #icons .snappyProcess p,
+  #icons .affordablePrices p,
+  #icons .peopleFirst p {
+    color: #837d87;
+    text-align: center;
+    padding: 2rem 5% 0 5%;
+    line-height: 1.6;
+  }
+  #icons .snappyProcess img,
+  #icons .affordablePrices img,
+  #icons .peopleFirst img {
+    margin: 0;
+    padding-bottom: 10%;
+  }
+  #icons .snappyProcess h2,
+  #icons .affordablePrices h2,
+  #icons .peopleFirst h2 {
+    text-align: left;
+    padding-bottom: 4%;
+  }
+  #icons .snappyProcess p,
+  #icons .affordablePrices p,
+  #icons .peopleFirst p {
+    text-align: left;
+    padding: 0;
+    padding-right: 10%;
+    font-size: 0.9rem;
+  }
+  .howWeWork {
+    position: relative;
+    background-image: none;
+    width: 80%;
+    margin: auto;
+    height: 250px;
+    padding: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 78% 22%;
+        grid-template-columns: 78% 22%;
+  }
+  .howWeWork img {
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+  .howWeWork h1 {
+    font-size: 3rem;
+    text-align: left;
+    padding: 8% 20% 8% 10%;
+  }
+  .howWeWork div {
+    padding: 9px;
+    width: 45%;
+    margin: 0 auto;
+    border: 2px solid #fafafa;
+    color: #fafafa;
+    text-align: center;
+    margin-top: 8%;
+    white-space: nowrap;
+    margin: auto 0;
+    font-size: 0.9rem;
+    width: 70%;
+    z-index: 999;
+  }
+  .howWeWork div a {
+    cursor: pointer;
+  }
+  .howWeWork div:hover {
+    background-color: #fafafa;
+    color: #2d2640;
+  }
+  #footer {
+    height: 60vh;
+    margin-top: 200px;
+    background-color: #fafafa;
+    background-image: url(../images/bg-pattern-footer-desktop.svg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  #footer .footerIcons {
+    background-image: none;
+    height: 30%;
+  }
+  #footer .footerIcons .logo {
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 5%;
+    padding: 0;
+  }
+  #footer .footerIcons ul {
+    float: right;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+    margin-right: 10%;
+    margin-top: 5%;
+  }
+  #footer .footerIcons li {
+    list-style: none;
+    padding: 0.5rem;
+  }
+  #footer .bigLine {
+    margin: auto;
+    display: block;
+    width: 80%;
+  }
+  #footer .footerGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+    margin-left: 10%;
+  }
+  #footer .footerGrid .footerItems {
+    text-align: center;
+    margin-top: 10%;
+    text-align: left;
+  }
+  #footer .footerGrid .footerItems h4 {
+    padding: 1.2rem;
+    color: #837d87;
+  }
+  #footer .footerGrid .footerItems p {
+    color: #2b272f;
+    font-weight: 700;
+    padding: 0.5rem;
+  }
+  #footer .footerGrid .footerItems a {
+    cursor: pointer;
+  }
+  #footer .footerGrid .footerItems a:hover {
+    text-decoration: underline;
+  }
+  #footer .footerGrid .footerItems h4 {
+    padding: 1.2rem 0;
+  }
+  #footer .footerGrid .footerItems p {
+    padding: 0.5rem 0;
+  }
+  .attribution {
+    background-color: #fafafa;
+    margin-top: 0;
+    font-size: 0.9rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

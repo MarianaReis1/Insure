@@ -1,0 +1,13 @@
+@media all and (min-width: 370px){
+
+    @media all and (min-width: 500px){
+        .introImageSmall {
+            display: none;
+        }
+        
+        .introImageBig{
+            display: block;
+            margin: auto;
+        }    
+    }
+}

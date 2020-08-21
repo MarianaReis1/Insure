@@ -12,7 +12,7 @@ $font2: DM Serif Display, serif;
 
 
 @mixin btn {
-    padding: 8px;
+    padding: 9px;
     width: 45%;
     margin: 0 auto;
     border: 2px solid $neutralColor3;
@@ -56,4 +56,11 @@ $font2: DM Serif Display, serif;
         font-weight: 700;
         padding: 0.5rem;
     }
+    a{
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
 }
