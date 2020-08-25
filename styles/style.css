@@ -58,25 +58,25 @@ header .barIcon {
   top: 0;
 }
 
-#introImages .introImages {
+#introContent .introImages {
   background-color: #2d2640;
 }
 
-#introImages .introImageSmall {
+#introContent .introImageSmall {
   display: block;
   margin: auto;
 }
 
-#introImages .introImageBig {
+#introContent .introImageBig {
   display: none;
 }
 
-#introImages .pattern1,
-#introImages .pattern2 {
+#introContent .pattern1,
+#introContent .pattern2 {
   display: none;
 }
 
-#introImages .introText {
+#introContent .introText {
   background-image: url(../images/bg-pattern-intro-left-mobile.svg), url(../images/bg-pattern-intro-right-mobile.svg), url(../images/line.jpeg), -webkit-gradient(linear, left top, left bottom, color-stop(80%, #2d2640), color-stop(20%, white));
   background-image: url(../images/bg-pattern-intro-left-mobile.svg), url(../images/bg-pattern-intro-right-mobile.svg), url(../images/line.jpeg), linear-gradient(#2d2640 80%, white 20%);
   background-position: left top, right bottom, center bottom;
@@ -85,31 +85,31 @@ header .barIcon {
   height: 90vh;
 }
 
-#introImages .introText img {
+#introContent .introText img {
   display: none;
 }
 
-#introImages .introText h1,
-#introImages .introText p,
-#introImages .introText div {
+#introContent .introText h1,
+#introContent .introText p,
+#introContent .introText div {
   color: #fafafa;
   text-align: center;
 }
 
-#introImages .introText h1 {
+#introContent .introText h1 {
   font-family: DM Serif Display, serif;
   font-size: 2.5rem;
   padding-top: 20%;
   padding-bottom: 5%;
 }
 
-#introImages .introText p {
+#introContent .introText p {
   font-family: DM Serif Display, serif;
   line-height: 1.3;
   padding: 2% 8%;
 }
 
-#introImages .introText div {
+#introContent .introText div {
   padding: 9px;
   width: 45%;
   margin: 0 auto;
@@ -119,7 +119,7 @@ header .barIcon {
   margin-top: 8%;
 }
 
-#introImages .introText div a {
+#introContent .introText div a {
   cursor: pointer;
 }
 
@@ -264,10 +264,10 @@ header .barIcon {
 }
 
 @media all and (min-width: 376px) {
-  #introImages .introImageSmall {
+  #introContent .introImageSmall {
     display: none;
   }
-  #introImages .introImageBig {
+  #introContent .introImageBig {
     display: block;
     margin: auto;
     width: 100%;
@@ -321,71 +321,71 @@ header .barIcon {
   header .barIcon {
     display: none;
   }
-  #introImages {
+  #introContent {
     position: relative;
     height: 65vh;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #2d2640), color-stop(20%, white));
     background-image: linear-gradient(#2d2640 80%, white 20%);
   }
-  #introImages figure {
+  #introContent figure {
     position: absolute;
     height: inherit;
     width: 100vw;
   }
-  #introImages figure .introImageSmall {
+  #introContent figure .introImageSmall {
     position: absolute;
     background-color: none;
     display: block;
     right: 5%;
-    top: 25%;
+    top: 10rem;
   }
-  #introImages figure .introImageBig {
+  #introContent figure .introImageBig {
     display: none;
   }
-  #introImages figure .pattern1 {
+  #introContent figure .pattern1 {
     position: absolute;
     display: inherit;
-    left: 0;
-    bottom: -200px;
+    left: -40px;
+    bottom: -150px;
   }
-  #introImages figure .pattern2 {
+  #introContent figure .pattern2 {
     display: initial;
     position: absolute;
-    right: 0;
+    right: -150px;
     top: 0;
   }
-  #introImages .introText {
+  #introContent .introText {
     position: absolute;
     height: inherit;
     background-image: none;
     width: 50%;
-    padding: 22% 5% 0 8%;
+    padding: 10rem 5% 0 8%;
   }
-  #introImages .introText img {
+  #introContent .introText img {
     display: block;
     position: absolute;
     width: 100px;
   }
-  #introImages .introText h1,
-  #introImages .introText p,
-  #introImages .introText div {
+  #introContent .introText h1,
+  #introContent .introText p,
+  #introContent .introText div {
     color: #fafafa;
   }
-  #introImages .introText h1 {
+  #introContent .introText h1 {
     font-family: DM Serif Display, serif;
     font-size: 2.5rem;
     padding-top: 15%;
     padding-bottom: 5%;
     text-align: left;
   }
-  #introImages .introText p {
+  #introContent .introText p {
     font-family: Karla;
     line-height: 1.5;
     font-size: 0.9rem;
     padding: 2% 0;
     text-align: left;
   }
-  #introImages .introText div {
+  #introContent .introText div {
     padding: 9px;
     width: 45%;
     margin: 0 auto;
@@ -396,10 +396,10 @@ header .barIcon {
     margin: 0;
     margin-top: 25px;
   }
-  #introImages .introText div a {
+  #introContent .introText div a {
     cursor: pointer;
   }
-  #introImages .introText div:hover {
+  #introContent .introText div:hover {
     background-color: #fafafa;
     color: #2d2640;
   }
@@ -634,73 +634,73 @@ header .barIcon {
   header .barIcon {
     display: none;
   }
-  #introImages {
+  #introContent {
     position: relative;
-    height: 120vh;
-    max-height: 930px;
+    height: 110vh;
+    max-height: 900px;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(85%, #2d2640), color-stop(15%, white));
     background-image: linear-gradient(#2d2640 85%, white 15%);
   }
-  #introImages figure {
+  #introContent figure {
     position: absolute;
     height: inherit;
     width: 100vw;
   }
-  #introImages figure .introImageBig {
+  #introContent figure .introImageBig {
     position: absolute;
     background-color: none;
     display: block;
     right: 10%;
-    top: 200px;
+    top: 10rem;
     width: 540px;
   }
-  #introImages figure .introImageSmall {
+  #introContent figure .introImageSmall {
     display: none;
   }
-  #introImages figure .pattern1 {
+  #introContent figure .pattern1 {
     position: absolute;
     display: inherit;
     left: 0;
-    bottom: -200px;
+    bottom: -120px;
   }
-  #introImages figure .pattern2 {
+  #introContent figure .pattern2 {
     display: initial;
     position: absolute;
     right: 0;
     top: 0;
   }
-  #introImages .introText {
+  #introContent .introText {
     position: absolute;
     height: inherit;
     background-image: none;
     width: 50%;
-    padding: 18% 5% 0 10%;
+    padding: 10rem 5% 0 10%;
   }
-  #introImages .introText img {
+  #introContent .introText img {
     display: block;
     position: absolute;
     width: 100px;
   }
-  #introImages .introText h1,
-  #introImages .introText p,
-  #introImages .introText div {
+  #introContent .introText h1,
+  #introContent .introText p,
+  #introContent .introText div {
     color: #fafafa;
   }
-  #introImages .introText h1 {
+  #introContent .introText h1 {
     font-family: DM Serif Display, serif;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     padding-top: 15%;
     padding-bottom: 5%;
     text-align: left;
   }
-  #introImages .introText p {
+  #introContent .introText p {
     font-family: Karla;
     line-height: 1.5;
     font-size: 0.9rem;
     padding: 2% 0;
     text-align: left;
   }
-  #introImages .introText div {
+  #introContent .introText div {
     padding: 9px;
     width: 45%;
     margin: 0 auto;
@@ -711,10 +711,10 @@ header .barIcon {
     margin: 0;
     margin-top: 25px;
   }
-  #introImages .introText div a {
+  #introContent .introText div a {
     cursor: pointer;
   }
-  #introImages .introText div:hover {
+  #introContent .introText div:hover {
     background-color: #fafafa;
     color: #2d2640;
   }
@@ -949,71 +949,72 @@ header .barIcon {
   header .barIcon {
     display: none;
   }
-  #introImages {
+  #introContent {
     position: relative;
-    height: 100vh;
+    height: 110vh;
+    max-height: 900px;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #2d2640), color-stop(20%, white));
     background-image: linear-gradient(#2d2640 80%, white 20%);
   }
-  #introImages figure {
+  #introContent figure {
     position: absolute;
     height: inherit;
     width: 100vw;
   }
-  #introImages figure .introImageBig {
+  #introContent figure .introImageBig {
     position: absolute;
     background-color: none;
     display: block;
     right: 12%;
-    top: 20%;
+    top: 10rem;
   }
-  #introImages figure .introImageSmall {
+  #introContent figure .introImageSmall {
     display: none;
   }
-  #introImages figure .pattern1 {
+  #introContent figure .pattern1 {
     position: absolute;
     display: inherit;
     left: 0;
-    bottom: -150px;
+    bottom: -120px;
   }
-  #introImages figure .pattern2 {
+  #introContent figure .pattern2 {
     display: initial;
     position: absolute;
     right: 0;
     top: 0;
   }
-  #introImages .introText {
+  #introContent .introText {
     position: absolute;
     height: inherit;
     background-image: none;
     width: 50%;
-    padding: 13% 2% 0 10%;
+    padding: 10rem 2% 0 10%;
   }
-  #introImages .introText img {
+  #introContent .introText img {
     display: block;
     position: absolute;
     width: 120px;
   }
-  #introImages .introText h1,
-  #introImages .introText p,
-  #introImages .introText div {
+  #introContent .introText h1,
+  #introContent .introText p,
+  #introContent .introText div {
     color: #fafafa;
   }
-  #introImages .introText h1 {
+  #introContent .introText h1 {
     font-family: DM Serif Display, serif;
-    font-size: 3rem;
+    font-size: 3.5rem;
     padding-top: 15%;
     padding-bottom: 5%;
     text-align: left;
   }
-  #introImages .introText p {
+  #introContent .introText p {
     font-family: Karla;
     line-height: 1.5;
     font-size: 1rem;
     padding: 2% 0;
     text-align: left;
   }
-  #introImages .introText div {
+  #introContent .introText div {
     padding: 9px;
     width: 45%;
     margin: 0 auto;
@@ -1026,10 +1027,10 @@ header .barIcon {
     margin-top: 25px;
     width: 26%;
   }
-  #introImages .introText div a {
+  #introContent .introText div a {
     cursor: pointer;
   }
-  #introImages .introText div:hover {
+  #introContent .introText div:hover {
     background-color: #fafafa;
     color: #2d2640;
   }

@@ -57,7 +57,7 @@
     }
 
     //main content
-    #introImages {
+    #introContent {
         position: relative;
         height: 65vh;
         background-image: linear-gradient($primaryColor1 80%, white 20%);
@@ -73,7 +73,7 @@
                 background-color: none;
                 display: block;
                 right: 5%;
-                top: 25%;
+                top: 10rem;
     
                 
             }
@@ -85,14 +85,14 @@
             .pattern1 {
                 position: absolute;
                 display: inherit;
-                left: 0;
-                bottom: -200px;
+                left: -40px;
+                bottom: -150px;
             }
 
             .pattern2 {
                 display: initial;
                 position: absolute;
-                right: 0;
+                right: -150px;
                 top: 0;
              
             }
@@ -104,7 +104,7 @@
             height: inherit;
             background-image: none;
             width: 50%;
-            padding: 22% 5% 0 8%;
+            padding: 10rem 5% 0 8%;
             //small line
             img {
                 display: block;
