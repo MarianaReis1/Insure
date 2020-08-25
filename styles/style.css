@@ -637,6 +637,7 @@ header .barIcon {
   #introImages {
     position: relative;
     height: 120vh;
+    max-height: 930px;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(85%, #2d2640), color-stop(15%, white));
     background-image: linear-gradient(#2d2640 85%, white 15%);
   }
@@ -650,7 +651,7 @@ header .barIcon {
     background-color: none;
     display: block;
     right: 10%;
-    top: 25%;
+    top: 200px;
     width: 540px;
   }
   #introImages figure .introImageSmall {

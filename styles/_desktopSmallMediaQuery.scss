@@ -61,6 +61,7 @@
     #introImages {
         position: relative;
         height: 120vh;
+        max-height: 930px;
         background-image: linear-gradient($primaryColor1 85%, white 15%);
 
 
@@ -74,7 +75,7 @@
                 background-color: none;
                 display: block;
                 right: 10%;
-                top: 25%;
+                top: 200px;
                 width: 540px;
             }
             
