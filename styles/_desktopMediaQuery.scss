@@ -6,6 +6,16 @@
     padding-right: 3rem;
   }
 
+  &__navList--hide,
+  &__navList--show {
+    > :last-child {
+      padding: 1.5% 6%;
+      color: $neutralColor1;
+      border: 2px solid $neutralColor3;
+      background-color: $neutralColor3;
+    }
+  }
+
   //home content
   .home {
     height: 110vh;
@@ -28,12 +38,23 @@
     }
 
     &__pattern1 {
+      position: absolute;
+      display: inherit;
       left: 0;
       bottom: -120px;
     }
 
     &__pattern2 {
-      right: 0;
+      display: initial;
+      position: absolute;
+      right: -150px;
+      top: 0;
+    }
+
+    &__line1 {
+      display: block;
+      position: absolute;
+      width: 100px;
     }
 
     &__introText {

@@ -291,6 +291,10 @@ body {
   .header__navList--hide > :last-child, .header__navList--show > :last-child {
     padding: 1.5% 6%;
     color: #2b272f;
+    border: 2px solid #2b272f;
+    background-color: #fafafa;
+  }
+  .header__navList--hide > :last-child:hover, .header__navList--show > :last-child:hover {
     background-color: #2b272f;
     color: #fafafa;
   }
@@ -504,6 +508,13 @@ body {
   #header__navList {
     padding-right: 3rem;
   }
+  __navList--hide > :last-child,
+  __navList--show > :last-child {
+    padding: 1.5% 6%;
+    color: #2b272f;
+    border: 2px solid #fafafa;
+    background-color: #fafafa;
+  }
   .home {
     height: 110vh;
     max-height: 900px;
@@ -522,11 +533,21 @@ body {
     width: 540px;
   }
   .home__pattern1 {
+    position: absolute;
+    display: inherit;
     left: 0;
     bottom: -120px;
   }
   .home__pattern2 {
-    right: 0;
+    display: initial;
+    position: absolute;
+    right: -150px;
+    top: 0;
+  }
+  .home__line1 {
+    display: block;
+    position: absolute;
+    width: 100px;
   }
   .home__introText {
     height: 110vh;

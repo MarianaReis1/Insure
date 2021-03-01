@@ -29,8 +29,12 @@
       > :last-child {
         padding: 1.5% 6%;
         color: $neutralColor1;
-        background-color: $neutralColor1;
-        color: $neutralColor3;
+        border: 2px solid $neutralColor1;
+        background-color: $neutralColor3;
+        &:hover {
+          background-color: $neutralColor1;
+          color: $neutralColor3;
+        }
       }
     }
 
