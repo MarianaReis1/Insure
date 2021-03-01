@@ -1,0 +1,25 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: Karla;
+  overflow-x: hidden;
+}
+
+#header__navList {
+  position: relative;
+  color: #fafafa;
+  list-style-type: none;
+  min-height: 90vh;
+  background-color: #2b272f;
+  background-image: url("../images/bg-pattern-mobile-nav.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding-top: 10%;
+}
+/*# sourceMappingURL=stylesUpdated.css.map */

@@ -1,308 +1,272 @@
-@import './variablesAndMixins';
+@import "./variablesAndMixins";
 
-@media all and (min-width: 834px){
-    //header
-    header{
+@media all and (min-width: 834px) {
+  //Navegation Bar
+  #header__navList {
+    display: inline-flex;
+    position: absolute;
+    right: 6rem;
+    min-height: 0;
+    background-color: inherit;
+    background-image: none;
+    padding-top: 1rem;
+    padding-right: 0.5rem;
+  }
+
+  .header {
+    position: absolute;
+    width: 100vw;
+    background-color: white;
+    z-index: 999;
+
+    &__logo {
+      padding: 1.7rem 6rem 1.7rem 2.5rem;
+      min-width: 23%;
+    }
+
+    &__navList--hide,
+    &__navList--show {
+      > :last-child {
+        padding: 1.5% 6%;
+        color: $neutralColor1;
+        background-color: $neutralColor1;
+        color: $neutralColor3;
+      }
+    }
+
+    &__item {
+      margin: auto;
+      white-space: nowrap;
+      color: $neutralColor2;
+      font-size: 1rem;
+      padding: 0 2rem;
+      &:hover {
+        color: $neutralColor1;
+      }
+    }
+
+    &__navIcons {
+      display: none;
+    }
+
+    //home content
+    .home {
+      position: relative;
+      height: 65vh;
+      background-image: linear-gradient($primaryColor1 80%, white 20%);
+
+      &__img {
         position: absolute;
+        height: inherit;
         width: 100vw;
-        background-color:  white;
-        z-index: 999;
 
-        .logo {
-            padding: 1.7rem 6rem 1.7rem 2.5rem;  
-            min-width: 23%;      
+        &--small {
+          position: absolute;
+          background-color: none;
+          display: block;
+          right: 5%;
+          top: 10rem;
         }
 
-
-        #navBarList{
-            display: inline-flex;
-            position: absolute;
-            right: 6rem;
-            min-height: 0;
-            background-color:  inherit;
-            background-image: none;
-            padding-top: 1rem;
-            padding-right: 0.5rem;
-            
-            li {
-                margin: auto;
-                white-space: nowrap;
-                color: $neutralColor2;
-                font-size: 1rem;
-                padding: 0 2rem;
-
-                &:hover {
-                    color: $neutralColor1;
-                }
-            }
-
-            > :last-child{
-                padding: 1.5% 6%;
-                width: 60%;
-                margin: auto;
-                border: 2px solid $neutralColor1;
-                color: $neutralColor1;
-            }
-
-            #viewPlansBtn:hover {
-                background-color: $neutralColor1;
-                color: $neutralColor3;
-            }
-
+        &--big {
+          display: none;
         }
-        
-        .barIcon {
-            display: none;
-        }
-    }
+      }
 
-    //main content
-    #introContent {
-        position: relative;
-        height: 65vh;
-        background-image: linear-gradient($primaryColor1 80%, white 20%);
+      &__pattern1 {
+        position: absolute;
+        display: inherit;
+        left: -40px;
+        bottom: -150px;
+      }
 
+      &__pattern2 {
+        display: initial;
+        position: absolute;
+        right: -150px;
+        top: 0;
+      }
 
-        figure {
-            position: absolute;
-            height: inherit;
-            width: 100vw;
-            
-            .introImageSmall {
-                position: absolute;
-                background-color: none;
-                display: block;
-                right: 5%;
-                top: 10rem;
-    
-                
-            }
-            
-            .introImageBig {
-                display: none;
-            }
-            
-            .pattern1 {
-                position: absolute;
-                display: inherit;
-                left: -40px;
-                bottom: -150px;
-            }
+      &__line1 {
+        display: block;
+        position: absolute;
+        width: 100px;
+      }
 
-            .pattern2 {
-                display: initial;
-                position: absolute;
-                right: -150px;
-                top: 0;
-             
-            }
-        }
-
-        
-        .introText {
-            position: absolute;
-            height: inherit;
-            background-image: none;
-            width: 50%;
-            padding: 10rem 5% 0 8%;
-            //small line
-            img {
-                display: block;
-                position: absolute;
-                width: 100px;
-            }
-
-            h1,
-            p,
-            div {
-                color: $neutralColor3;
-            }
-    
-            h1 {
-                
-                font-family: $font2;
-                font-size: 2.5rem;
-                padding-top: 15%;
-                padding-bottom: 5%;
-                text-align: left;
-            }
-    
-            p {
-                font-family: $font1;
-                line-height: 1.5;
-                font-size: 0.9rem;
-                padding: 2% 0;
-                text-align: left;
-            }
-    
-            div{
-                @include btn();
-                margin: 0;
-                margin-top: 25px;
-
-                &:hover {
-                    background-color: $neutralColor3;
-                    color: $primaryColor1;
-                }
-            }
-        };
-    
-    }
-//"We're differente" Content
-    .secondContent {
-        padding-top: 0;
-        min-height: 50vh;
-        padding-left: 8%;
-
-        .line {
-            position: absolute;
-            display: block;
-            width: 100px;
-
-        }
-        
-        h1{
-            padding: 5% 0;
-            color: $neutralColor1;
-            font-size: 2.5rem;
-            font-family: $font2;
-            text-align: left;
-        }
-    
-    }
-    
-    #icons {
-        display: grid;
-        grid-template-columns: auto auto auto;
-
-        .snappyProcess,
-        .affordablePrices,
-        .peopleFirst  {
-            @include weAreDifferentIcons;
-
-            img {
-                margin: 0;
-                padding-bottom: 10%;
-                
-            }
-            h2 {
-                text-align: left;
-                padding-bottom: 4%;
-            }
-            p {
-                text-align: left;
-                padding: 0;
-                padding-right: 10%;
-                font-size: 0.9rem;
-            }
-        
-        }
-    }
-
-    
-    .howWeWork {
-        position: relative;
+      &__introText {
+        position: absolute;
+        height: inherit;
         background-image: none;
-        width: 80%;
-        margin: auto;
-        height: 250px;
-        padding: 0;
-        display: grid;
-        grid-template-columns: 78% 22%;
+        width: 50%;
+        padding: 10rem 5% 0 8%;
 
+        h1,
+        p,
+        div {
+          color: $neutralColor3;
+        }
+
+        h1 {
+          font-family: $font2;
+          font-size: 2.5rem;
+          padding-top: 15%;
+          padding-bottom: 5%;
+          text-align: left;
+        }
+
+        p {
+          font-family: $font1;
+          line-height: 1.5;
+          font-size: 0.9rem;
+          padding: 2% 0;
+          text-align: left;
+        }
+
+        div {
+          margin: 0;
+          margin-top: 25px;
+
+          &:hover {
+            background-color: $neutralColor3;
+            color: $primaryColor1;
+          }
+        }
+      }
+    }
+  }
+
+  //"We're differente" Section
+
+  .weAreDifferent {
+    padding-top: 0;
+    min-height: 50vh;
+    padding-left: 8%;
+
+    &__line2 {
+      position: absolute;
+      display: block;
+      width: 100px;
+    }
+
+    &__title {
+      padding: 5% 0;
+      text-align: left;
+    }
+
+    &__items {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      &--snappyProcess,
+      &--affordablePrices,
+      &--peopleFirst {
         img {
-            display: block;
-            position: absolute;
-            right: 0;
+          margin: 0;
+          padding-bottom: 10%;
         }
+        h2 {
+          text-align: left;
+          padding-bottom: 4%;
+        }
+        p {
+          text-align: left;
+          padding: 0;
+          padding-right: 10%;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
 
-        h1{
-            // position: absolute;
-            font-size: 2.2rem;
-            text-align: left;
-            padding: 15%;
-        }
-        div{
-            @include btn();
-            white-space: nowrap;
-            margin: auto 0;
-            font-size: 0.9rem;
-            width: 90%;
-            z-index: 999;
-            &:hover {
-                background-color: $neutralColor3;
-                color: $primaryColor1;
-            }
-        }
+  //"How we work" Section
+
+  .howWeWork {
+    position: relative;
+    background-image: none;
+    width: 80%;
+    margin: auto;
+    height: 250px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 78% 22%;
+
+    &__img {
+      display: block;
+      position: absolute;
+      right: 0;
     }
 
+    &__txt {
+      font-size: 2.2rem;
+      text-align: left;
+      padding: 15%;
+    }
 
-    #footer {
-        height: 40vh;
-        margin-top: 200px;
+    &__button {
+      white-space: nowrap;
+      margin: auto 0;
+      font-size: 0.9rem;
+      width: 90%;
+      z-index: 999;
+      &:hover {
         background-color: $neutralColor3;
-        background-image: 
-            url(../images/bg-pattern-footer-desktop.svg);
-        background-position: left top;
-        background-repeat: no-repeat;
-        background-size: auto;
-        
-        .footerIcons {
-            background-image: none;
-            height: 30%;
+        color: $primaryColor1;
+      }
+    }
+  }
 
-            .logo{
-                display: inline-block;
-                margin-left: 10%;
-                margin-top: 5%;
-                padding: 0; //5rem 5rem 1rem 5rem
-            }
+  .footer {
+    height: 40vh;
+    margin-top: 200px;
+    background-color: $neutralColor3;
+    background-image: url(../images/bg-pattern-footer-desktop.svg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: auto;
 
-            ul{
-                float: right;
-                display: grid;
-                grid-template-columns: auto auto auto auto;
-                margin-right: 10%;
-                margin-top: 5%;
-            }
+    &__top {
+      background-image: none;
+      height: 30%;
 
-            li {
-                list-style: none;
-                padding: 0.5rem;
-            }
-        }
-        
-        .bigLine {
-            margin: auto;
-            display: block;
-            // position: absolute;
-            width: 80%;
-        }
+      &--logo {
+        display: inline-block;
+        margin-left: 10%;
+        margin-top: 5%;
+        padding: 0; //5rem 5rem 1rem 5rem
+      }
 
-        .footerGrid {
-            display: grid;
-            grid-template-columns: auto auto auto auto;
-            margin-left: 10%;
-
-
-            .footerItems {
-                @include footerInformation;
-                text-align: left;
-                h4{
-                    padding: 1.2rem 0;
-                }
-                p{
-                    padding: 0.5rem 0;
-                }
-                
-            }
-
-        }
+      &--socialList {
+        float: right;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        margin-right: 10%;
+        margin-top: 5%;
+      }
     }
 
-    .attribution {
-        background-color: $neutralColor3;
-        margin-top: 0;
-        font-size: 0.9rem;
+    &__line3 {
+      margin: auto;
+      display: block;
+      width: 80%;
     }
+
+    &__grid {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      margin-left: 10%;
+
+      &Items {
+        text-align: left;
+        h4 {
+          padding: 1.2rem 0;
+        }
+        p {
+          padding: 0.5rem 0;
+        }
+      }
+    }
+  }
+
+  .attribution {
+    font-size: 1rem;
+  }
 }

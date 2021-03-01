@@ -1,0 +1,115 @@
+@import "./variablesAndMixins";
+
+@media all and (min-width: 1280px) {
+  //Navegation Bar
+  #header__navList {
+    padding-right: 3rem;
+  }
+
+  //home content
+  .home {
+    height: 110vh;
+    max-height: 900px;
+    background-image: linear-gradient($primaryColor1 85%, white 15%);
+
+    &__img {
+      &--small {
+        display: none;
+      }
+
+      &--big {
+        position: absolute;
+        background-color: none;
+        display: block;
+        right: 10%;
+        top: 10rem;
+        width: 540px;
+      }
+    }
+
+    &__pattern1 {
+      left: 0;
+      bottom: -120px;
+    }
+
+    &__pattern2 {
+      right: 0;
+    }
+
+    &__introText {
+      height: 110vh;
+      position: absolute;
+      height: inherit;
+      background-image: none;
+      width: 50%;
+      padding: 10rem 5% 0 10%;
+
+      h1,
+      p,
+      div {
+        color: $neutralColor3;
+      }
+
+      h1 {
+        font-family: $font2;
+        font-size: 2.5rem;
+        padding-top: 15%;
+        padding-bottom: 5%;
+        text-align: left;
+      }
+
+      p {
+        font-family: $font1;
+        line-height: 1.5;
+        font-size: 0.9rem;
+        padding: 2% 0;
+        text-align: left;
+      }
+
+      div {
+        margin: 0;
+        margin-top: 25px;
+
+        &:hover {
+          background-color: $neutralColor3;
+          color: $primaryColor1;
+        }
+      }
+    }
+  }
+
+  //"We're differente" Section
+
+  .weAreDifferent {
+    padding-top: 10%;
+    min-height: 100vh;
+    padding-left: 10%;
+  }
+
+  //"How we work" Section
+
+  .howWeWork {
+    &__txt {
+      font-size: 3rem;
+      padding: 8% 20% 8% 10%;
+    }
+
+    &__button {
+      width: 70%;
+      padding: 9px;
+    }
+  }
+
+  .footer {
+    height: 60vh;
+
+    &__top {
+      height: 25%;
+    }
+
+    &__grid {
+      margin: auto;
+      width: 80%;
+    }
+  }
+}

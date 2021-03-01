@@ -1,16 +1,15 @@
-@import './variablesAndMixins';
+@import "./variablesAndMixins";
 
-@media all and (min-width: 376px){
-
-    #introContent {
-        .introImageSmall {
-            display: none;
-        }
-        
-        .introImageBig{
-            display: block;
-            margin: auto;
-            width: 100%;
-        }    
+@media all and (min-width: 376px) {
+  .home {
+    &__img--small {
+      display: none;
     }
+
+    &__img--big {
+      display: block;
+      margin: auto;
+      width: 100%;
+    }
+  }
 }
